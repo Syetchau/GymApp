@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListExercisesActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/name_of_exercise"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_24sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+   <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/progress_bar"
+       android:indeterminate="false"
+       android:layout_above="@id/detail_image"
+       android:layout_marginBottom="@dimen/dimen_20dp"
+       app:mpb_progressStyle="horizontal"
+       app:mpb_progressBackgroundTint="@color/colorPink"
+       app:mpb_progressTint="@color/fbutton_color_green_sea"
+       style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300dp"
+        android:id="@+id/detail_image"
+        android:src="@drawable/bench_press"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_get_ready"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txtGetReady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/layout_get_ready"
+            android:layout_alignTop="@+id/layout_get_ready"
+            android:layout_gravity="center_horizontal"
+            android:text="GET READY"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/txtCountDown"
+            android:text="3"
+            android:textSize="@dimen/dimen_30sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStartViewExercise"
+        android:text="START"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:fButtonColor="@color/colorPrimary"
+        app:shadowColor="@color/colorBlack"
+        app:shadowEnabled="true"
+        app:shadowHeight="@dimen/dimen_2dp"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnStartViewExercise"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dimen_50sp" />
+
+</RelativeLayout>

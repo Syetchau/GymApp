@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListExercisesActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/name_of_exercise"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_24sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300dp"
+        android:id="@+id/detail_image"
+        android:src="@drawable/bench_press"
+        android:layout_centerInParent="true"/>
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:text="@string/start"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:fButtonColor="@color/colorPrimary"
+        app:shadowColor="@color/colorBlack"
+        app:shadowEnabled="true"
+        app:shadowHeight="@dimen/dimen_2dp"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnStart"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/thirty_sec"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dimen_50sp" />
+
+</RelativeLayout>

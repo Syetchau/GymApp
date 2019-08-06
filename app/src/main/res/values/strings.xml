@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Gym Fitness App</string>
+    <string name="exercises">Exercises</string>
+    <string name="settings">Setting</string>
+    <string name="calendar">Calendar</string>
+    <string name="view_exercise">View Posture</string>
+    <string name="name_of_exercise">Name of Posture</string>
+    <string name="start">Start</string>
+    <string name="thirty_sec">30</string>
+    <string name="done">Done</string>
+    <string name="finish">Finish</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="save">Save</string>
+    <string name="saved">Alarm Saved</string>
+    <string name="get_ready">Get Ready</string>
+    <string name="three">3</string>
+    <string name="skip">Skip</string>
+    <string name="rest_time">Rest Time</string>
+    <string name="gratz">Congralutions</string>
+    <string name="done_today_exercises">Finish!</string>
+    <string name="workout_done">Workout Done</string>
+
+</resources>
